@@ -1,0 +1,143 @@
+<!doctype html><html lang="en" dir="ltr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Strong Random Password Generator (Runs in Your Browser) | Mufeedo</title><meta name="description" content="Generate a strong random password with the length and symbols you choose. It is created in your browser and never sent anywhere.">
+<link rel="canonical" href="https://mufeedo-site.github.io/en/password-generator/"><link rel="alternate" hreflang="ar" href="https://mufeedo-site.github.io/password-generator/"><link rel="alternate" hreflang="en" href="https://mufeedo-site.github.io/en/password-generator/"><link rel="alternate" hreflang="x-default" href="https://mufeedo-site.github.io/password-generator/"><link rel="icon" href="../../assets/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="../../assets/mark.svg"><link rel="apple-touch-icon" href="../../assets/icon-180.png"><meta name="theme-color" content="#0f766e"><meta name="p:domain_verify" content="31b7b35192c0634b2e22b5ac2c5de2f2">
+<meta property="og:title" content="Strong Random Password Generator (Runs in Your Browser) | Mufeedo"><meta property="og:description" content="Generate a strong random password with the length and symbols you choose. It is created in your browser and never sent anywhere."><meta property="og:type" content="website"><meta property="og:locale" content="en_US">
+<link rel="stylesheet" href="../../assets/style.css?v=edc47008">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Password Generator","description":"Generate a strong random password with the length and symbols you choose. It is created in your browser and never sent anywhere.","url":"https://mufeedo-site.github.io/en/password-generator/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are my files uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. Everything runs in your browser on your device."}},{"@type":"Question","name":"What length is best?","acceptedAnswer":{"@type":"Answer","text":"At least 16 characters for important accounts."}},{"@type":"Question","name":"Do I need symbols?","acceptedAnswer":{"@type":"Answer","text":"Not if the password is long, but symbols add strength."}}]}</script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="6be9eb69-af01-4c90-8f20-a477eedb8b2f"></script></head><body>
+<header class="top"><div class="wrap bar"><a class="brand" href="../../en/"><img class="logo" src="../../assets/mark.svg" alt="" width="32" height="32">Mufeedo</a>
+<nav><a href="../../en/"><svg aria-hidden="true" focusable="false" class="i "
+  class="lucide lucide-layout-grid"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="7" height="7" x="3" y="3" rx="1" />
+  <rect width="7" height="7" x="14" y="3" rx="1" />
+  <rect width="7" height="7" x="14" y="14" rx="1" />
+  <rect width="7" height="7" x="3" y="14" rx="1" />
+</svg><span>All tools</span></a><a href="../../"><svg aria-hidden="true" focusable="false" class="i "
+  class="lucide lucide-info"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 16v-4" />
+  <path d="M12 8h.01" />
+</svg><span>عربي</span></a></nav></div></header>
+<main class="wrap">
+<nav class="crumbs"><a href="../">Home</a> › Password Generator</nav>
+<div class="th"><span class="ic big c-misc"><svg aria-hidden="true" focusable="false" class="i "
+  class="lucide lucide-key-round"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z" />
+  <circle cx="16.5" cy="7.5" r=".5" fill="currentColor" />
+</svg></span><h1>Password Generator</h1></div><p class="lead">A random password made on your device. Nothing is sent to a server.</p>
+<section class="card tool" id="tool"><div class="pw" id="p"></div><label>Length: <b id="ln">16</b></label><input type="range" id="len" min="8" max="64" value="16"><label class="chk"><input type="checkbox" id="u" checked>Uppercase A-Z</label><label class="chk"><input type="checkbox" id="l" checked>Lowercase a-z</label><label class="chk"><input type="checkbox" id="d" checked>Numbers 0-9</label><label class="chk"><input type="checkbox" id="s" checked>Symbols !@#$</label><div class="bar-sm"><i id="bar"></i></div><div id="st" class="muted"></div><button id="gen">Generate new</button><button class="alt" id="cp">Copy</button></section>
+<section class="content"><h2>How to use Password Generator</h2><ol><li>Move the slider to choose a length. 16 or more is a good default.</li><li>Pick the character types.</li><li>Press Copy and save it in a password manager.</li></ol>
+<h2>Good to know</h2><p>The password uses the browser secure random generator (crypto.getRandomValues), not an ordinary random function.</p><p>Length matters most. 16 characters with mixed types gives a strong result.</p><p>Use a different password for every account and turn on two-step verification where you can.</p><p>We left out look-alike characters such as O, l, 0 and 1 so the password is easy to read.</p>
+<h2>FAQ</h2><details><summary>Are my files uploaded?</summary><p>No. Everything runs in your browser on your device.</p></details><details><summary>What length is best?</summary><p>At least 16 characters for important accounts.</p></details><details><summary>Do I need symbols?</summary><p>Not if the password is long, but symbols add strength.</p></details></section>
+<section><h2>More tools</h2><div class="grid"><a class="tile" href="../qr-code-generator/"><span class="ic c-misc"><svg aria-hidden="true" focusable="false" class="i "
+  class="lucide lucide-qr-code"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="5" height="5" x="3" y="3" rx="1" />
+  <rect width="5" height="5" x="16" y="3" rx="1" />
+  <rect width="5" height="5" x="3" y="16" rx="1" />
+  <path d="M21 16h-3a2 2 0 0 0-2 2v3" />
+  <path d="M21 21v.01" />
+  <path d="M12 7v3a2 2 0 0 1-2 2H7" />
+  <path d="M3 12h.01" />
+  <path d="M12 3h.01" />
+  <path d="M12 16v.01" />
+  <path d="M16 12h1" />
+  <path d="M21 12v.01" />
+  <path d="M12 21v-1" />
+</svg></span><b>QR Code Generator</b><small>Make a QR code for a link or text and download a PNG</small></a><a class="tile" href="../image-compressor/"><span class="ic c-files"><svg aria-hidden="true" focusable="false" class="i "
+  class="lucide lucide-image-down"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.3 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10l-3.1-3.1a2 2 0 0 0-2.814.014L6 21" />
+  <path d="m14 19 3 3v-5.5" />
+  <path d="m17 22 3-3" />
+  <circle cx="9" cy="9" r="2" />
+</svg></span><b>Image Compressor</b><small>Shrink JPG, PNG and WebP images without uploading them</small></a><a class="tile" href="../merge-pdf/"><span class="ic c-files"><svg aria-hidden="true" focusable="false" class="i "
+  class="lucide lucide-files"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 2h-4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8" />
+  <path d="M16.706 2.706A2.4 2.4 0 0 0 15 2v5a1 1 0 0 0 1 1h5a2.4 2.4 0 0 0-.706-1.706z" />
+  <path d="M5 7a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h8a2 2 0 0 0 1.732-1" />
+</svg></span><b>Merge PDF Files</b><small>Combine several PDF files into one</small></a><a class="tile" href="../images-to-pdf/"><span class="ic c-files"><svg aria-hidden="true" focusable="false" class="i "
+  class="lucide lucide-file-image"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <circle cx="10" cy="12" r="2" />
+  <path d="m20 17-1.296-1.296a2.41 2.41 0 0 0-3.408 0L9 22" />
+</svg></span><b>Images to PDF</b><small>Combine several images into one PDF</small></a></div></section></main>
+<footer><div class="wrap"><p>Mufeedo: free tools that run in your browser. The files and text you enter are not sent to any server.</p>
+<p><a href="../../privacy/">Privacy (Arabic)</a> · <a href="../../contact/">Contact (Arabic)</a></p></div></footer>
+<script src="../../assets/common.js"></script><script>function gen(){var sets=[];if($('u').checked)sets.push('ABCDEFGHJKLMNPQRSTUVWXYZ');if($('l').checked)sets.push('abcdefghijkmnopqrstuvwxyz');if($('d').checked)sets.push('23456789');if($('s').checked)sets.push('!@#$%^&*-_=+?');
+if(!sets.length){$('p').textContent='Pick at least one type';return}var n=+$('len').value;$('ln').textContent=n;var all=sets.join('');
+function rnd(m){var a=new Uint32Array(1),lim=Math.floor(4294967296/m)*m;do{crypto.getRandomValues(a)}while(a[0]>=lim);return a[0]%m}
+var out;for(var tries=0;tries<200;tries++){out=[];for(var q=0;q<n;q++)out.push(all[rnd(all.length)]);var okk=sets.every(function(S){return out.some(function(c){return S.indexOf(c)>-1})});if(okk)break}
+$('p').textContent=out.join('');var bits=n*Math.log2(all.length);$('bar').style.width=Math.min(100,bits/1.28)+'%';$('st').textContent='Rough strength: '+(bits<50?'weak':bits<80?'fair':bits<110?'strong':'very strong')}
+['len','u','l','d','s'].forEach(function(i){$(i).addEventListener('input',gen)});$('gen').onclick=gen;$('cp').onclick=function(){copyText($('p').textContent)};gen();</script></body></html>
