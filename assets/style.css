@@ -1,0 +1,74 @@
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Segoe UI",Tahoma,"Noto Sans Arabic","Noto Naskh Arabic",Arial,sans-serif;background:#f4f7f6;color:#14231f;line-height:1.8;font-size:17px}
+a{color:#0f766e}.wrap{max-width:960px;margin:0 auto;padding:0 16px}
+.top{background:#fff;border-bottom:1px solid #dbe5e2;position:sticky;top:0;z-index:5}
+.bar{display:flex;justify-content:space-between;align-items:center;min-height:56px;gap:12px}
+.brand{font-weight:700;font-size:19px;color:#0f766e;text-decoration:none;display:flex;gap:8px;align-items:center}
+nav a{margin-inline-start:14px;text-decoration:none;font-size:15px}
+h1{font-size:28px;line-height:1.4;margin:22px 0 8px}h2{font-size:21px;margin:28px 0 10px}
+.lead{color:#3f5650;margin:0 0 16px}.muted{color:#5a6f69}
+.crumbs{font-size:14px;color:#5a6f69;margin-top:14px}.crumbs a{text-decoration:none}
+.hero{background:linear-gradient(135deg,#0f766e,#14b8a6);color:#fff;border-radius:18px;padding:24px 18px;margin:18px 0}
+.hero h1{margin-top:0;font-size:26px}.hero p{margin:6px 0 14px;opacity:.95}
+.search{width:100%;padding:14px 16px;border:0;border-radius:12px;font:inherit;font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:700px){.grid{grid-template-columns:repeat(3,1fr)}}
+.tile{background:#fff;border:1px solid #dbe5e2;border-radius:14px;padding:14px;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:2px}
+.tile:hover{border-color:#14b8a6;box-shadow:0 2px 10px #0f766e22}.tile .ic{font-size:26px}.tile b{font-size:16px}.tile small{color:#5a6f69;font-size:13px;line-height:1.5}
+.card{background:#fff;border:1px solid #dbe5e2;border-radius:16px;padding:18px}
+.tool label{display:block;font-weight:600;margin:12px 0 4px;font-size:15px}
+.tool input,.tool select,.tool textarea{width:100%;padding:11px 12px;border:1px solid #c5d3cf;border-radius:10px;font:inherit;background:#fff}
+.tool textarea{min-height:150px;resize:vertical}.tool input[type=range]{padding:0}.tool input[type=color]{height:44px;padding:2px}
+.tool input[type=checkbox]{width:auto;margin-inline-end:8px}.chk{display:flex;align-items:center;margin:6px 0;font-weight:400!important}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+button,.btn{background:#0f766e;color:#fff;border:0;border-radius:10px;padding:11px 18px;font:inherit;font-weight:600;cursor:pointer;margin:10px 0 0;margin-inline-end:8px;text-decoration:none;display:inline-block}
+button.alt,.btn.alt{background:#e3efec;color:#0f4f49}button:disabled{opacity:.5}
+.res{margin-top:14px;background:#effaf7;border:1px solid #bfe6dd;border-radius:12px;padding:12px 14px}
+.res .big{font-size:26px;font-weight:700;color:#0f766e;line-height:1.5}.kv{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed #cfe5df;padding:5px 0}.kv:last-child{border:0}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}@media(min-width:600px){.stats{grid-template-columns:repeat(3,1fr)}}
+.stat{background:#effaf7;border-radius:10px;padding:10px;text-align:center}.stat b{display:block;font-size:22px;color:#0f766e}.stat span{font-size:13px;color:#4a5f59}
+.content p,.content li{max-width:70ch}details{background:#fff;border:1px solid #dbe5e2;border-radius:10px;padding:10px 14px;margin:8px 0}summary{cursor:pointer;font-weight:600}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}.tabs button{margin:0;padding:8px 14px}.tabs button.on{background:#0f766e;color:#fff}
+.list{list-style:none;padding:0;margin:10px 0}.list li{display:flex;align-items:center;gap:8px;background:#f4f7f6;border-radius:10px;padding:8px 10px;margin:6px 0;font-size:14px;word-break:break-all}.list li span{flex:1}.list button{margin:0;padding:4px 10px;font-size:14px}
+.pw{direction:ltr;text-align:left;font-family:Consolas,monospace;font-size:20px;word-break:break-all;background:#fff;border:1px solid #bfe6dd;border-radius:10px;padding:12px}
+canvas{max-width:100%;height:auto}.qrbox{text-align:center}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#14231f;color:#fff;padding:10px 18px;border-radius:10px;font-size:15px;z-index:20}
+footer{margin-top:40px;background:#fff;border-top:1px solid #dbe5e2;padding:18px 0;font-size:14px;color:#4a5f59}
+.bar-sm{height:10px;border-radius:5px;background:#dbe5e2;overflow:hidden}.bar-sm i{display:block;height:100%;background:#14b8a6}
+.ltr{direction:ltr;unicode-bidi:plaintext}
+.logo{width:32px;height:32px;display:inline-block;vertical-align:middle}
+.tile .ic{background:#e3f4f0;color:#0f766e;font-weight:700;font-size:15px;width:46px;height:34px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;margin-bottom:6px;direction:ltr}
+.tile{min-height:112px}
+.row,.row3{grid-template-columns:repeat(2,minmax(0,1fr))}.row3{grid-template-columns:repeat(3,minmax(0,1fr))}.row>div{min-width:0}
+.tool input,.tool select{min-width:0;max-width:100%}
+@media(max-width:360px){.row{grid-template-columns:minmax(0,1fr)}}
+.tabs button{background:#e3efec;color:#0f4f49}.tabs button.on{background:#0f766e;color:#fff}
+/* UX pass: self-hosted fonts, type scale, spacing, touch targets */
+@font-face{font-family:"Mufeedo Sans";src:url(fonts/sans-400.woff) format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Mufeedo Sans";src:url(fonts/sans-700.woff) format("woff");font-weight:600 800;font-display:swap}
+@font-face{font-family:"Mufeedo Kufi";src:url(fonts/kufi-700.woff) format("woff");font-weight:600 800;font-display:swap}
+:root{--sp1:8px;--sp2:16px;--sp3:24px;--sp4:40px}
+body{font-family:"Mufeedo Sans","Noto Sans Arabic","Segoe UI",Tahoma,Arial,sans-serif;font-size:18px;line-height:1.85}
+h1,h2,h3,.brand,.res .big,.stat b{font-family:"Mufeedo Kufi","Mufeedo Sans",Tahoma,sans-serif;font-weight:700}
+h1{font-size:clamp(26px,6.5vw,34px);line-height:1.5;margin:var(--sp3) 0 var(--sp1)}
+h2{font-size:clamp(21px,5vw,25px);line-height:1.5;margin:var(--sp4) 0 var(--sp2)}
+h3{font-size:19px;line-height:1.6}
+.wrap{padding:0 var(--sp2)}
+.hero{padding:var(--sp3) 20px;margin:var(--sp3) 0 var(--sp2)}
+.hero h1{font-size:clamp(25px,6.5vw,32px)}.hero p{font-size:17px;margin:var(--sp1) 0 var(--sp2)}
+.search{min-height:52px;font-size:18px}
+.grid{gap:12px}.tile{padding:16px;gap:4px}.tile b{font-size:17px;line-height:1.6}.tile small{font-size:14.5px;line-height:1.65;color:#51655f}
+nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 4px;font-size:16px}
+.card{padding:20px 18px}
+.tool label{font-size:16px;margin:var(--sp2) 0 6px}
+.tool input,.tool select,.tool textarea{min-height:48px;font-size:18px;padding:12px 14px}
+button,.btn{min-height:48px;font-size:17px;padding:12px 20px}
+.tabs button{min-height:44px}
+.kv{padding:8px 0}.res{padding:16px}
+.crumbs{font-size:15px;margin-top:var(--sp2)}
+.content p,.content li{max-width:68ch;line-height:1.95}.content p{margin:0 0 var(--sp2)}
+details{padding:12px 16px}summary{min-height:32px;line-height:1.8}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #f59e0b;outline-offset:2px}
+footer{font-size:15px;line-height:1.9;padding:var(--sp3) 0}
+@media(min-width:700px){body{font-size:18px}.wrap{padding:0 24px}.hero{padding:36px 32px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}

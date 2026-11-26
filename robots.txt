@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mufeedo-site.github.io/sitemap.xml

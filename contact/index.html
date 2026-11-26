@@ -1,0 +1,15 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>تواصل معنا | مفيدو</title><meta name="description" content="تواصل معنا لموقع مفيدو">
+<link rel="canonical" href="https://mufeedo-site.github.io/contact/"><link rel="icon" href="../assets/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="../assets/mark.svg"><link rel="apple-touch-icon" href="../assets/icon-180.png"><meta name="theme-color" content="#0f766e">
+<meta property="og:title" content="تواصل معنا | مفيدو"><meta property="og:description" content="تواصل معنا لموقع مفيدو"><meta property="og:type" content="website"><meta property="og:locale" content="ar_AR">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head><body>
+<header class="top"><div class="wrap bar"><a class="brand" href="../"><img class="logo" src="../assets/mark.svg" alt="" width="32" height="32">مفيدو</a>
+<nav><a href="../">كل الأدوات</a><a href="../about/">عن الموقع</a></nav></div></header>
+<main class="wrap"><section class="content card"><h1>تواصل معنا</h1><p>عندك اقتراح أداة أو لقيت خطأ؟ اكتب لنا هنا. بنقرا كل الرسائل.</p>
+<form id="cf" class="tool" novalidate><label for="cn">اسمك</label><input id="cn" name="name" required autocomplete="name"><label for="ce">بريدك الإلكتروني (للرد عليك)</label><input id="ce" name="email" type="email" required autocomplete="email" dir="ltr"><label for="cm">رسالتك</label><textarea id="cm" name="message" required></textarea><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none"><button type="submit" id="cs">إرسال</button><div id="cr" role="status" aria-live="polite"></div></form><p class="muted">الرسالة بتتبعت عن طريق خدمة Web3Forms ووصلتنا على بريد المشروع. بنستخدم بريدك للرد فقط.</p></section></main>
+<footer><div class="wrap"><p>مفيدو: أدوات مجانية بالعربي تشتغل في متصفحك. الملفات والنصوص اللي بتدخلها ما بتتبعتش لأي سيرفر.</p>
+<p><a href="../about/">عن الموقع</a> · <a href="../privacy/">سياسة الخصوصية</a> · <a href="../terms/">الشروط</a> · <a href="../contact/">تواصل معنا</a></p></div></footer>
+<script src="../assets/common.js"></script><script>(function(){var f=document.getElementById('cf'),r=document.getElementById('cr'),b=document.getElementById('cs');f.addEventListener('submit',function(e){e.preventDefault();if(!f.checkValidity()){r.textContent='كمّل الاسم والبريد والرسالة.';return}b.disabled=true;r.textContent='بنبعت...';var d=new FormData(f);d.append('access_key','1f90e3ce-d8e8-4827-8bbf-5cfc890d8d59');d.append('subject','رسالة جديدة من موقع مفيدو');fetch('https://api.web3forms.com/submit',{method:'POST',body:d}).then(function(x){return x.json()}).then(function(j){if(j.success){r.textContent='وصلتنا رسالتك. شكرا ليك.';f.reset()}else{r.textContent='حصلت مشكلة وماتبعتتش. جرب تاني بعد شوية.'}b.disabled=false}).catch(function(){r.textContent='حصلت مشكلة في الاتصال. جرب تاني.';b.disabled=false})})})()</script></body></html>
