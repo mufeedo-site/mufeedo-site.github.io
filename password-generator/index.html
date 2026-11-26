@@ -9,15 +9,156 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://mufeedo-site.github.io/"},{"@type":"ListItem","position":2,"name":"مولد كلمات المرور","item":"https://mufeedo-site.github.io/password-generator/"}]}</script>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="6be9eb69-af01-4c90-8f20-a477eedb8b2f"></script></head><body>
 <header class="top"><div class="wrap bar"><a class="brand" href="../"><img class="logo" src="../assets/mark.svg" alt="" width="32" height="32">مفيدو</a>
-<nav><a href="../">كل الأدوات</a><a href="../articles/">مقالات</a><a href="../about/">عن الموقع</a></nav></div></header>
+<nav><a href="../"><svg aria-hidden="true" focusable="false" class="i "
+  class="lucide lucide-layout-grid"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="7" height="7" x="3" y="3" rx="1" />
+  <rect width="7" height="7" x="14" y="3" rx="1" />
+  <rect width="7" height="7" x="14" y="14" rx="1" />
+  <rect width="7" height="7" x="3" y="14" rx="1" />
+</svg><span>كل الأدوات</span></a><a href="../articles/"><svg aria-hidden="true" focusable="false" class="i "
+  class="lucide lucide-newspaper"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 18h-5" />
+  <path d="M18 14h-8" />
+  <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2" />
+  <rect width="8" height="4" x="10" y="6" rx="1" />
+</svg><span>مقالات</span></a><a href="../about/"><svg aria-hidden="true" focusable="false" class="i "
+  class="lucide lucide-info"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 16v-4" />
+  <path d="M12 8h.01" />
+</svg><span>عن الموقع</span></a></nav></div></header>
 <main class="wrap">
 <nav class="crumbs"><a href="../">الرئيسية</a> › <a href="../#misc">أدوات متنوعة</a> › مولد كلمات المرور</nav>
-<h1>مولد كلمات المرور</h1><p class="lead">كلمة سر عشوائية، بتتولد على جهازك ومش بتتبعت لأي مكان.</p>
+<div class="th"><span class="ic big c-misc"><svg aria-hidden="true" focusable="false" class="i "
+  class="lucide lucide-key-round"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z" />
+  <circle cx="16.5" cy="7.5" r=".5" fill="currentColor" />
+</svg></span><h1>مولد كلمات المرور</h1></div><p class="lead">كلمة سر عشوائية، بتتولد على جهازك ومش بتتبعت لأي مكان.</p>
 <section class="card tool" id="tool"><div class="pw" id="p"></div><label>الطول: <b id="ln">16</b></label><input type="range" id="len" min="8" max="64" value="16"><label class="chk"><input type="checkbox" id="u" checked>أحرف كبيرة A-Z</label><label class="chk"><input type="checkbox" id="l" checked>أحرف صغيرة a-z</label><label class="chk"><input type="checkbox" id="d" checked>أرقام 0-9</label><label class="chk"><input type="checkbox" id="s" checked>رموز !@#$</label><div class="bar-sm"><i id="bar"></i></div><div id="st" class="muted"></div><button id="gen">توليد جديد</button><button class="alt" id="cp">نسخ</button></section>
 <section class="content"><h2>إزاي تستخدم مولد كلمات المرور</h2><ol><li>حرّك المنزلق لاختيار الطول، والأفضل 16 أو أكتر.</li><li>اختار أنواع الحروف والرموز.</li><li>اضغط نسخ وخزنها في مدير كلمات مرور.</li></ol>
 <h2>معلومات تهمك</h2><p>الكلمة بتتولد باستخدام مولد الأرقام العشوائية الآمن في المتصفح (crypto.getRandomValues)، وليست مولد عشوائي عادي.</p><p>كلما زاد الطول زادت القوة بشكل كبير. 16 حرف مع أنواع مختلفة بتدي مستوى أمان ممتاز.</p><p>استخدم كلمة مرور مختلفة لكل حساب، وفعّل التحقق بخطوتين لو متاح.</p><p>شلنا الحروف المتشابهة مثل O وl والرقم 0 و1 علشان تقدر تقرأ الكلمة بسهولة.</p>
 <h2>أسئلة شائعة</h2><details><summary>هل الملفات بتترفع على سيرفر؟</summary><p>لا. المعالجة كلها بتحصل داخل متصفحك على جهازك، ومفيش حاجة بتتبعت لأي مكان.</p></details><details><summary>إيه أفضل طول؟</summary><p>16 حرف على الأقل للحسابات المهمة.</p></details><details><summary>هل لازم رموز؟</summary><p>مش لازم لو الطول كبير، لكنها بتزود القوة.</p></details></section>
-<section><h2>أدوات تانية ممكن تفيدك</h2><div class="grid"><a class="tile" href="../qr-code-generator/"><span class="ic">QR</span><b>مولد QR كود</b><small>أنشئ QR لأي رابط أو نص وحمّله PNG</small></a><a class="tile" href="../hijri-date/"><span class="ic">هـ</span><b>التاريخ الهجري اليوم</b><small>تاريخ اليوم بالهجري وتحويل بين الهجري والميلادي</small></a><a class="tile" href="../age-calculator/"><span class="ic">27</span><b>حاسبة العمر</b><small>احسب عمرك بالسنين والشهور والأيام</small></a><a class="tile" href="../date-difference/"><span class="ic">±</span><b>حساب الفرق بين تاريخين</b><small>عدد الأيام بين تاريخين وإضافة أيام لتاريخ</small></a></div></section></main>
+<section><h2>أدوات تانية ممكن تفيدك</h2><div class="grid"><a class="tile" href="../qr-code-generator/"><span class="ic c-misc"><svg aria-hidden="true" focusable="false" class="i "
+  class="lucide lucide-qr-code"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="5" height="5" x="3" y="3" rx="1" />
+  <rect width="5" height="5" x="16" y="3" rx="1" />
+  <rect width="5" height="5" x="3" y="16" rx="1" />
+  <path d="M21 16h-3a2 2 0 0 0-2 2v3" />
+  <path d="M21 21v.01" />
+  <path d="M12 7v3a2 2 0 0 1-2 2H7" />
+  <path d="M3 12h.01" />
+  <path d="M12 3h.01" />
+  <path d="M12 16v.01" />
+  <path d="M16 12h1" />
+  <path d="M21 12v.01" />
+  <path d="M12 21v-1" />
+</svg></span><b>مولد QR كود</b><small>أنشئ QR لأي رابط أو نص وحمّله PNG</small></a><a class="tile" href="../hijri-date/"><span class="ic c-date"><svg aria-hidden="true" focusable="false" class="i "
+  class="lucide lucide-moon-star"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18 5h4" />
+  <path d="M20 3v4" />
+  <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
+</svg></span><b>التاريخ الهجري اليوم</b><small>تاريخ اليوم بالهجري وتحويل بين الهجري والميلادي</small></a><a class="tile" href="../age-calculator/"><span class="ic c-date"><svg aria-hidden="true" focusable="false" class="i "
+  class="lucide lucide-cake"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8" />
+  <path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1" />
+  <path d="M2 21h20" />
+  <path d="M7 8v3" />
+  <path d="M12 8v3" />
+  <path d="M17 8v3" />
+  <path d="M7 4h.01" />
+  <path d="M12 4h.01" />
+  <path d="M17 4h.01" />
+</svg></span><b>حاسبة العمر</b><small>احسب عمرك بالسنين والشهور والأيام</small></a><a class="tile" href="../date-difference/"><span class="ic c-date"><svg aria-hidden="true" focusable="false" class="i "
+  class="lucide lucide-calendar-range"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect x="3" y="3" width="18" height="18" rx="2" />
+  <path d="M16 2v3" />
+  <path d="M3 9h18" />
+  <path d="M8 2v3" />
+  <path d="M17 13h-6" />
+  <path d="M13 17H7" />
+  <path d="M7 13h.01" />
+  <path d="M17 17h.01" />
+</svg></span><b>حساب الفرق بين تاريخين</b><small>عدد الأيام بين تاريخين وإضافة أيام لتاريخ</small></a></div></section></main>
 <footer><div class="wrap"><p>مفيدو: أدوات مجانية بالعربي تشتغل في متصفحك. الملفات والنصوص اللي بتدخلها ما بتتبعتش لأي سيرفر.</p>
 <p><a href="../about/">عن الموقع</a> · <a href="../privacy/">سياسة الخصوصية</a> · <a href="../terms/">الشروط</a> · <a href="../contact/">تواصل معنا</a></p></div></footer>
 <script src="../assets/common.js"></script><script>function gen(){var sets=[];if($('u').checked)sets.push('ABCDEFGHJKLMNPQRSTUVWXYZ');if($('l').checked)sets.push('abcdefghijkmnopqrstuvwxyz');if($('d').checked)sets.push('23456789');if($('s').checked)sets.push('!@#$%^&*-_=+?');
