@@ -101,3 +101,9 @@ footer{font-size:15px;line-height:1.9;padding:var(--sp3) 0}
 .tile .ic.c-date,.ic.c-date{background:#dbeafe;color:#1d4ed8}.tile .ic.c-calc,.ic.c-calc{background:#d1fae5;color:#047857}.tile .ic.c-text,.ic.c-text{background:#fef3c7;color:#b45309}.tile .ic.c-files,.ic.c-files{background:#fee2e2;color:#b91c1c}.tile .ic.c-misc,.ic.c-misc{background:#ede9fe;color:#6d28d9}
 .chip{font-size:15px;padding:0 14px}
 @media(max-width:480px){.top nav a:first-child{display:none}.top nav{gap:14px}}
+
+/* mobile hardening: no decorative art behind content, nav never wraps */
+@media(max-width:699px){.hero .art{display:none}}
+.top .bar{flex-wrap:wrap;padding-block:4px}.top nav{display:flex;align-items:center;gap:10px;flex-wrap:nowrap}.top nav a{margin-inline-start:0;white-space:nowrap}
+.brand{white-space:nowrap}
+@media(max-width:400px){.top nav a span{font-size:14px}.top nav{gap:6px}}
